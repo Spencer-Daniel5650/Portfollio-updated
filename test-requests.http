@@ -1,0 +1,70 @@
+# CREATE a new trip
+POST http://localhost:3005/trips
+Content-Type: application/json
+
+{
+    "date": "2024-11-25",
+    "miles": 100,
+    "paymentAmount": 75.50,
+    "description": "First trip log."
+}
+
+POST http://localhost:3005/trips
+Content-Type: application/json
+
+{
+    "date": "2024-11-26",
+    "miles": 150,
+    "paymentAmount": 120.00,
+    "description": "Second trip log."
+}
+
+POST http://localhost:3005/trips
+Content-Type: application/json
+
+{
+    "date": "2024-11-27",
+    "miles": 90,
+    "paymentAmount": 85.00,
+    "description": "Business trip."
+}
+
+POST http://localhost:3005/trips
+Content-Type: application/json
+
+{
+    "date": "2024-11-28",
+    "miles": 60,
+    "paymentAmount": 45.00,
+    "description": "Personal trip."
+}
+
+POST http://localhost:3005/trips
+Content-Type: application/json
+
+{
+    "date": "2024-11-29",
+    "miles": 200,
+    "paymentAmount": 180.00,
+    "description": "Long-distance trip."
+}
+
+# RETRIEVE all trips
+GET http://localhost:3005/trips
+
+# RETRIEVE a trip by ID
+GET http://localhost:3005/trips/6345abc1234abc12345abc12
+
+# UPDATE a trip
+PUT http://localhost:3005/trips/6345abc1234abc12345abc12
+Content-Type: application/json
+
+{
+    "date": "2024-12-01",
+    "miles": 110,
+    "paymentAmount": 95.00,
+    "description": "Updated trip details."
+}
+
+# DELETE a trip
+DELETE http://localhost:3005/trips/6345abc1234abc12345abc12

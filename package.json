@@ -1,0 +1,18 @@
+{
+  "name": "uber-trips-backend",
+  "version": "1.0.0",
+  "description": "Backend for logging Uber trips with date, miles, payment amount, and description.",
+  "main": "trips-controller.mjs",
+  "scripts": {
+    "start": "nodemon trips-controller.mjs"
+  },
+  "author": "Your Name",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^16.4.7",
+    "express": "^4.18.2",
+    "mongoose": "^6.9.1",
+    "nodemon": "^3.1.7",
+    "rest": "^2.0.0"
+  }
+}
